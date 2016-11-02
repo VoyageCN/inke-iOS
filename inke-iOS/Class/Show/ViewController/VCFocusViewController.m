@@ -1,22 +1,22 @@
 //
-//  VCBaseViewController.m
+//  VCFocusViewController.m
 //  inke-iOS
 //
-//  Created by VoyageCN on 2016/10/31.
+//  Created by VoyageCN on 2016/11/1.
 //  Copyright © 2016年 VoyageCN. All rights reserved.
 //
 
-#import "VCBaseViewController.h"
+#import "VCFocusViewController.h"
 
-@interface VCBaseViewController ()
+@interface VCFocusViewController ()
 
 @end
 
-@implementation VCBaseViewController
+@implementation VCFocusViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255));
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,5 +12,6 @@
 #import "VCMacros.h"
 #import "Masonry.h"
 #import "AFNetworking.h"
+#import "YYKit.h"
 
 #endif /* inke_iOS_pch */

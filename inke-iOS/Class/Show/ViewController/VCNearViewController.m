@@ -1,22 +1,22 @@
 //
-//  VCBaseViewController.m
+//  VCNearViewController.m
 //  inke-iOS
 //
-//  Created by VoyageCN on 2016/10/31.
+//  Created by VoyageCN on 2016/11/1.
 //  Copyright © 2016年 VoyageCN. All rights reserved.
 //
 
-#import "VCBaseViewController.h"
+#import "VCNearViewController.h"
 
-@interface VCBaseViewController ()
+@interface VCNearViewController ()
 
 @end
 
-@implementation VCBaseViewController
+@implementation VCNearViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255));
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

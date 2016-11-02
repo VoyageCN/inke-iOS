@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342BDBFC1DC89AF500CBC313 /* VCLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDBFA1DC89AF500CBC313 /* VCLaunchViewController.m */; };
+		342BDBFD1DC89AF500CBC313 /* VCLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDBFB1DC89AF500CBC313 /* VCLaunchViewController.xib */; };
+		342BDC011DC8A6FC00CBC313 /* VCFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDBFF1DC8A6FC00CBC313 /* VCFocusViewController.m */; };
+		342BDC021DC8A6FC00CBC313 /* VCFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC001DC8A6FC00CBC313 /* VCFocusViewController.xib */; };
+		342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC041DC8A70B00CBC313 /* VCHotViewController.m */; };
+		342BDC071DC8A70B00CBC313 /* VCHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */; };
+		342BDC0B1DC8A71500CBC313 /* VCNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC091DC8A71500CBC313 /* VCNearViewController.m */; };
+		342BDC0C1DC8A71500CBC313 /* VCNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */; };
+		342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */; };
 		3443ADEA1DC78AA500C0FDFF /* VCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADE91DC78AA500C0FDFF /* VCTabBarViewController.m */; };
 		3443ADED1DC78ACA00C0FDFF /* VCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADEC1DC78ACA00C0FDFF /* VCTabBar.m */; };
 		3443ADF01DC791D800C0FDFF /* VCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADEF1DC791D800C0FDFF /* VCBaseViewController.m */; };
@@ -25,6 +34,20 @@
 
 /* Begin PBXFileReference section */
 		280AF393F2A1E1E26C0D65B8 /* Pods-inke-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inke-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inke-iOS/Pods-inke-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		342BDBF91DC89AF500CBC313 /* VCLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLaunchViewController.h; sourceTree = "<group>"; };
+		342BDBFA1DC89AF500CBC313 /* VCLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLaunchViewController.m; sourceTree = "<group>"; };
+		342BDBFB1DC89AF500CBC313 /* VCLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCLaunchViewController.xib; sourceTree = "<group>"; };
+		342BDBFE1DC8A6FC00CBC313 /* VCFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFocusViewController.h; sourceTree = "<group>"; };
+		342BDBFF1DC8A6FC00CBC313 /* VCFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFocusViewController.m; sourceTree = "<group>"; };
+		342BDC001DC8A6FC00CBC313 /* VCFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCFocusViewController.xib; sourceTree = "<group>"; };
+		342BDC031DC8A70B00CBC313 /* VCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHotViewController.h; sourceTree = "<group>"; };
+		342BDC041DC8A70B00CBC313 /* VCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHotViewController.m; sourceTree = "<group>"; };
+		342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCHotViewController.xib; sourceTree = "<group>"; };
+		342BDC081DC8A71500CBC313 /* VCNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNearViewController.h; sourceTree = "<group>"; };
+		342BDC091DC8A71500CBC313 /* VCNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNearViewController.m; sourceTree = "<group>"; };
+		342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCNearViewController.xib; sourceTree = "<group>"; };
+		342BDC0D1DC8B20A00CBC313 /* VCMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMainTopView.h; sourceTree = "<group>"; };
+		342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMainTopView.m; sourceTree = "<group>"; };
 		3443ADE71DC7895400C0FDFF /* VCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCMacros.h; sourceTree = "<group>"; };
 		3443ADE81DC78AA500C0FDFF /* VCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTabBarViewController.h; sourceTree = "<group>"; };
 		3443ADE91DC78AA500C0FDFF /* VCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTabBarViewController.m; sourceTree = "<group>"; };
@@ -239,6 +262,9 @@
 		34B081961DC7734600D935E8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				342BDBF91DC89AF500CBC313 /* VCLaunchViewController.h */,
+				342BDBFA1DC89AF500CBC313 /* VCLaunchViewController.m */,
+				342BDBFB1DC89AF500CBC313 /* VCLaunchViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -328,6 +354,8 @@
 		34B081A31DC7734600D935E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				342BDC0D1DC8B20A00CBC313 /* VCMainTopView.h */,
+				342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +369,15 @@
 				3443ADF91DC7927C00C0FDFF /* VCMeViewController.h */,
 				3443ADFA1DC7927C00C0FDFF /* VCMeViewController.m */,
 				3443ADFB1DC7927C00C0FDFF /* VCMeViewController.xib */,
+				342BDBFE1DC8A6FC00CBC313 /* VCFocusViewController.h */,
+				342BDBFF1DC8A6FC00CBC313 /* VCFocusViewController.m */,
+				342BDC001DC8A6FC00CBC313 /* VCFocusViewController.xib */,
+				342BDC031DC8A70B00CBC313 /* VCHotViewController.h */,
+				342BDC041DC8A70B00CBC313 /* VCHotViewController.m */,
+				342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */,
+				342BDC081DC8A71500CBC313 /* VCNearViewController.h */,
+				342BDC091DC8A71500CBC313 /* VCNearViewController.m */,
+				342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -426,8 +463,12 @@
 			files = (
 				34B081801DC7700A00D935E8 /* LaunchScreen.storyboard in Resources */,
 				34A62F1C1DC782C100B97EEC /* Assets.xcassets in Resources */,
+				342BDBFD1DC89AF500CBC313 /* VCLaunchViewController.xib in Resources */,
+				342BDC071DC8A70B00CBC313 /* VCHotViewController.xib in Resources */,
 				3443ADFD1DC7927C00C0FDFF /* VCMeViewController.xib in Resources */,
 				3443ADF81DC7927000C0FDFF /* VCMainViewController.xib in Resources */,
+				342BDC021DC8A6FC00CBC313 /* VCFocusViewController.xib in Resources */,
+				342BDC0C1DC8A71500CBC313 /* VCNearViewController.xib in Resources */,
 				34B0817B1DC7700A00D935E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,10 +528,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342BDBFC1DC89AF500CBC313 /* VCLaunchViewController.m in Sources */,
 				3443ADF01DC791D800C0FDFF /* VCBaseViewController.m in Sources */,
+				342BDC011DC8A6FC00CBC313 /* VCFocusViewController.m in Sources */,
 				3443ADEA1DC78AA500C0FDFF /* VCTabBarViewController.m in Sources */,
+				342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */,
+				342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */,
 				34B081A51DC7734600D935E8 /* AppDelegate.m in Sources */,
 				3443ADED1DC78ACA00C0FDFF /* VCTabBar.m in Sources */,
+				342BDC0B1DC8A71500CBC313 /* VCNearViewController.m in Sources */,
 				3443AE031DC7939800C0FDFF /* VCBaseNavViewController.m in Sources */,
 				3443ADFC1DC7927C00C0FDFF /* VCMeViewController.m in Sources */,
 				3443ADF71DC7927000C0FDFF /* VCMainViewController.m in Sources */,

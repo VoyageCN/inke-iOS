@@ -14,9 +14,24 @@
 
 @property (nonatomic, strong) NSArray *dataList;
 
+@property (nonatomic, strong) UIButton *lastItem;
+
+@property (nonatomic, strong) UIButton *cameraButton;
+
 @end
 
 @implementation VCTabBar
+
+- (UIButton *)cameraButton {
+    
+    if (!_cameraButton) {
+        _cameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _cameraButton.tag = VCItemTypeLaunch;
+        [_cameraButton setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        [_cameraButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cameraButton;
+}
 
 - (NSArray *)dataList {
     
@@ -55,9 +70,14 @@
             
             item.tag = VCItemTypeLive + i;
             
+            if (i == 0) {
+                item.selected = YES;
+                self.lastItem = item;
+            }
+            
             [self addSubview:item];
         }
-        
+        [self addSubview:self.cameraButton];
     }
     return self;
 }
@@ -78,6 +98,8 @@
             btn.frame = CGRectMake((btn.tag - VCItemTypeLive) * width, 0, width, self.frame.size.height);
         }
     }
+    [self.cameraButton sizeToFit];
+    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height - 50);
 }
 
 - (void)clickItem:(UIButton *)button {
@@ -88,6 +110,21 @@
     
     !self.block? : self.block(self,button.tag);
     
+    if (button.tag == VCItemTypeLaunch) {
+        return ;
+    }
+    
+    self.lastItem.selected = NO;
+    button.selected = YES;
+    self.lastItem = button;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        button.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 animations:^{
+            button.transform = CGAffineTransformIdentity;
+        }];
+    }];
 }
 
 @end

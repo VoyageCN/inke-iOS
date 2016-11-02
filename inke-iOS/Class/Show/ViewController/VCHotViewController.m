@@ -1,22 +1,28 @@
 //
-//  VCBaseViewController.m
+//  VCHotViewController.m
 //  inke-iOS
 //
-//  Created by VoyageCN on 2016/10/31.
+//  Created by VoyageCN on 2016/11/1.
 //  Copyright © 2016年 VoyageCN. All rights reserved.
 //
 
-#import "VCBaseViewController.h"
+#import "VCHotViewController.h"
 
-@interface VCBaseViewController ()
+@interface VCHotViewController ()
 
 @end
 
-@implementation VCBaseViewController
+@implementation VCHotViewController
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    self.view.backgroundColor = [UIColor orangeColor];
+}
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255));
+    
 }
 
 - (void)didReceiveMemoryWarning {

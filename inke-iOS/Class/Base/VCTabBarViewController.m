@@ -9,6 +9,7 @@
 #import "VCTabBarViewController.h"
 #import "VCTabBar.h"
 #import "VCBaseNavViewController.h"
+#import "VCLaunchViewController.h"
 
 @interface VCTabBarViewController ()<VCTabBarDelegate>
 
@@ -33,6 +34,10 @@
     [self configViewControllers];
     
     [self.tabBar addSubview:self.vcTabBar];
+    
+    // 删除tabBar阴影线
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage new]];
 }
 
 - (void)configViewControllers {
@@ -61,6 +66,15 @@
 
 #pragma mark - VCTabBarDelegate
 - (void)tabBar:(VCTabBar *)tabBar clickButton:(VCItemType)index {
+    
+    if (index != VCItemTypeLaunch) {
+        self.selectedIndex = index - VCItemTypeLive;
+        return;
+    }
+    
+    VCLaunchViewController *launchVC = [[VCLaunchViewController alloc] init];
+    
+    [self presentViewController:launchVC animated:YES completion:nil];
     
 }
 
