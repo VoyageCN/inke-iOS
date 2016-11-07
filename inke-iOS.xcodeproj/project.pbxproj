@@ -13,8 +13,6 @@
 		342BDC021DC8A6FC00CBC313 /* VCFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC001DC8A6FC00CBC313 /* VCFocusViewController.xib */; };
 		342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC041DC8A70B00CBC313 /* VCHotViewController.m */; };
 		342BDC071DC8A70B00CBC313 /* VCHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */; };
-		342BDC0B1DC8A71500CBC313 /* VCNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC091DC8A71500CBC313 /* VCNearViewController.m */; };
-		342BDC0C1DC8A71500CBC313 /* VCNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */; };
 		342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */; };
 		3443ADEA1DC78AA500C0FDFF /* VCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADE91DC78AA500C0FDFF /* VCTabBarViewController.m */; };
 		3443ADED1DC78ACA00C0FDFF /* VCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADEC1DC78ACA00C0FDFF /* VCTabBar.m */; };
@@ -24,6 +22,16 @@
 		3443ADFC1DC7927C00C0FDFF /* VCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443ADFA1DC7927C00C0FDFF /* VCMeViewController.m */; };
 		3443ADFD1DC7927C00C0FDFF /* VCMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3443ADFB1DC7927C00C0FDFF /* VCMeViewController.xib */; };
 		3443AE031DC7939800C0FDFF /* VCBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3443AE021DC7939800C0FDFF /* VCBaseNavViewController.m */; };
+		348B74221DD092420093C5AD /* VCNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74201DD092420093C5AD /* VCNearLiveCell.m */; };
+		348B74231DD092420093C5AD /* VCNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 348B74211DD092420093C5AD /* VCNearLiveCell.xib */; };
+		348B74261DD0924B0093C5AD /* VCLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74251DD0924B0093C5AD /* VCLive.m */; };
+		348B74291DD095E80093C5AD /* VCCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74281DD095E80093C5AD /* VCCreator.m */; };
+		348B742C1DD0988E0093C5AD /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B742B1DD0988E0093C5AD /* UIImageView+SDWebImage.m */; };
+		348B74331DD09DA00093C5AD /* VCNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74311DD09DA00093C5AD /* VCNearViewController.m */; };
+		348B74341DD09DA00093C5AD /* VCNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 348B74321DD09DA00093C5AD /* VCNearViewController.xib */; };
+		348B74371DD09ECC0093C5AD /* VCLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74361DD09ECC0093C5AD /* VCLiveHandler.m */; };
+		348B743A1DD09EF60093C5AD /* VCBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74391DD09EF60093C5AD /* VCBaseHandler.m */; };
+		348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B743C1DD0A1720093C5AD /* HTTPTool.m */; };
 		34A62F1C1DC782C100B97EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A62F1B1DC782C100B97EEC /* Assets.xcassets */; };
 		34B081721DC7700A00D935E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B081711DC7700A00D935E8 /* main.m */; };
 		34B0817B1DC7700A00D935E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B081791DC7700A00D935E8 /* Main.storyboard */; };
@@ -43,9 +51,6 @@
 		342BDC031DC8A70B00CBC313 /* VCHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHotViewController.h; sourceTree = "<group>"; };
 		342BDC041DC8A70B00CBC313 /* VCHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHotViewController.m; sourceTree = "<group>"; };
 		342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCHotViewController.xib; sourceTree = "<group>"; };
-		342BDC081DC8A71500CBC313 /* VCNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNearViewController.h; sourceTree = "<group>"; };
-		342BDC091DC8A71500CBC313 /* VCNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNearViewController.m; sourceTree = "<group>"; };
-		342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCNearViewController.xib; sourceTree = "<group>"; };
 		342BDC0D1DC8B20A00CBC313 /* VCMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMainTopView.h; sourceTree = "<group>"; };
 		342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMainTopView.m; sourceTree = "<group>"; };
 		3443ADE71DC7895400C0FDFF /* VCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCMacros.h; sourceTree = "<group>"; };
@@ -63,6 +68,25 @@
 		3443ADFB1DC7927C00C0FDFF /* VCMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCMeViewController.xib; sourceTree = "<group>"; };
 		3443AE011DC7939800C0FDFF /* VCBaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseNavViewController.h; sourceTree = "<group>"; };
 		3443AE021DC7939800C0FDFF /* VCBaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseNavViewController.m; sourceTree = "<group>"; };
+		348B741F1DD092420093C5AD /* VCNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNearLiveCell.h; sourceTree = "<group>"; };
+		348B74201DD092420093C5AD /* VCNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNearLiveCell.m; sourceTree = "<group>"; };
+		348B74211DD092420093C5AD /* VCNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCNearLiveCell.xib; sourceTree = "<group>"; };
+		348B74241DD0924B0093C5AD /* VCLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLive.h; sourceTree = "<group>"; };
+		348B74251DD0924B0093C5AD /* VCLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLive.m; sourceTree = "<group>"; };
+		348B74271DD095E80093C5AD /* VCCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCreator.h; sourceTree = "<group>"; };
+		348B74281DD095E80093C5AD /* VCCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCreator.m; sourceTree = "<group>"; };
+		348B742A1DD0988E0093C5AD /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		348B742B1DD0988E0093C5AD /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		348B74301DD09DA00093C5AD /* VCNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNearViewController.h; sourceTree = "<group>"; };
+		348B74311DD09DA00093C5AD /* VCNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNearViewController.m; sourceTree = "<group>"; };
+		348B74321DD09DA00093C5AD /* VCNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCNearViewController.xib; sourceTree = "<group>"; };
+		348B74351DD09ECC0093C5AD /* VCLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLiveHandler.h; sourceTree = "<group>"; };
+		348B74361DD09ECC0093C5AD /* VCLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLiveHandler.m; sourceTree = "<group>"; };
+		348B74381DD09EF60093C5AD /* VCBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBaseHandler.h; sourceTree = "<group>"; };
+		348B74391DD09EF60093C5AD /* VCBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBaseHandler.m; sourceTree = "<group>"; };
+		348B743B1DD0A1720093C5AD /* HTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTool.h; sourceTree = "<group>"; };
+		348B743C1DD0A1720093C5AD /* HTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTool.m; sourceTree = "<group>"; };
+		348B743E1DD0AB2D0093C5AD /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
 		34A62F1B1DC782C100B97EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34B0816D1DC7700A00D935E8 /* inke-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "inke-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B081711DC7700A00D935E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,6 +178,8 @@
 				3443ADEF1DC791D800C0FDFF /* VCBaseViewController.m */,
 				3443AE011DC7939800C0FDFF /* VCBaseNavViewController.h */,
 				3443AE021DC7939800C0FDFF /* VCBaseNavViewController.m */,
+				348B74381DD09EF60093C5AD /* VCBaseHandler.h */,
+				348B74391DD09EF60093C5AD /* VCBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -311,6 +337,11 @@
 		34B0819C1DC7734600D935E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				348B742A1DD0988E0093C5AD /* UIImageView+SDWebImage.h */,
+				348B742B1DD0988E0093C5AD /* UIImageView+SDWebImage.m */,
+				348B743B1DD0A1720093C5AD /* HTTPTool.h */,
+				348B743C1DD0A1720093C5AD /* HTTPTool.m */,
+				348B743E1DD0AB2D0093C5AD /* APIConfig.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -340,6 +371,8 @@
 		34B081A11DC7734600D935E8 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				348B74351DD09ECC0093C5AD /* VCLiveHandler.h */,
+				348B74361DD09ECC0093C5AD /* VCLiveHandler.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -347,6 +380,10 @@
 		34B081A21DC7734600D935E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				348B74241DD0924B0093C5AD /* VCLive.h */,
+				348B74251DD0924B0093C5AD /* VCLive.m */,
+				348B74271DD095E80093C5AD /* VCCreator.h */,
+				348B74281DD095E80093C5AD /* VCCreator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +393,9 @@
 			children = (
 				342BDC0D1DC8B20A00CBC313 /* VCMainTopView.h */,
 				342BDC0E1DC8B20A00CBC313 /* VCMainTopView.m */,
+				348B741F1DD092420093C5AD /* VCNearLiveCell.h */,
+				348B74201DD092420093C5AD /* VCNearLiveCell.m */,
+				348B74211DD092420093C5AD /* VCNearLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,9 +415,9 @@
 				342BDC031DC8A70B00CBC313 /* VCHotViewController.h */,
 				342BDC041DC8A70B00CBC313 /* VCHotViewController.m */,
 				342BDC051DC8A70B00CBC313 /* VCHotViewController.xib */,
-				342BDC081DC8A71500CBC313 /* VCNearViewController.h */,
-				342BDC091DC8A71500CBC313 /* VCNearViewController.m */,
-				342BDC0A1DC8A71500CBC313 /* VCNearViewController.xib */,
+				348B74301DD09DA00093C5AD /* VCNearViewController.h */,
+				348B74311DD09DA00093C5AD /* VCNearViewController.m */,
+				348B74321DD09DA00093C5AD /* VCNearViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -429,7 +469,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VC;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = VoyageCN;
 				TargetAttributes = {
 					34B0816C1DC7700A00D935E8 = {
@@ -462,13 +502,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				34B081801DC7700A00D935E8 /* LaunchScreen.storyboard in Resources */,
+				348B74341DD09DA00093C5AD /* VCNearViewController.xib in Resources */,
 				34A62F1C1DC782C100B97EEC /* Assets.xcassets in Resources */,
 				342BDBFD1DC89AF500CBC313 /* VCLaunchViewController.xib in Resources */,
 				342BDC071DC8A70B00CBC313 /* VCHotViewController.xib in Resources */,
 				3443ADFD1DC7927C00C0FDFF /* VCMeViewController.xib in Resources */,
 				3443ADF81DC7927000C0FDFF /* VCMainViewController.xib in Resources */,
+				348B74231DD092420093C5AD /* VCNearLiveCell.xib in Resources */,
 				342BDC021DC8A6FC00CBC313 /* VCFocusViewController.xib in Resources */,
-				342BDC0C1DC8A71500CBC313 /* VCNearViewController.xib in Resources */,
 				34B0817B1DC7700A00D935E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,15 +573,22 @@
 				3443ADF01DC791D800C0FDFF /* VCBaseViewController.m in Sources */,
 				342BDC011DC8A6FC00CBC313 /* VCFocusViewController.m in Sources */,
 				3443ADEA1DC78AA500C0FDFF /* VCTabBarViewController.m in Sources */,
+				348B74221DD092420093C5AD /* VCNearLiveCell.m in Sources */,
 				342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */,
+				348B74371DD09ECC0093C5AD /* VCLiveHandler.m in Sources */,
 				342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */,
+				348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */,
+				348B74261DD0924B0093C5AD /* VCLive.m in Sources */,
 				34B081A51DC7734600D935E8 /* AppDelegate.m in Sources */,
 				3443ADED1DC78ACA00C0FDFF /* VCTabBar.m in Sources */,
-				342BDC0B1DC8A71500CBC313 /* VCNearViewController.m in Sources */,
+				348B743A1DD09EF60093C5AD /* VCBaseHandler.m in Sources */,
+				348B742C1DD0988E0093C5AD /* UIImageView+SDWebImage.m in Sources */,
 				3443AE031DC7939800C0FDFF /* VCBaseNavViewController.m in Sources */,
+				348B74331DD09DA00093C5AD /* VCNearViewController.m in Sources */,
 				3443ADFC1DC7927C00C0FDFF /* VCMeViewController.m in Sources */,
 				3443ADF71DC7927000C0FDFF /* VCMainViewController.m in Sources */,
 				34B081721DC7700A00D935E8 /* main.m in Sources */,
+				348B74291DD095E80093C5AD /* VCCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +632,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -631,6 +680,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

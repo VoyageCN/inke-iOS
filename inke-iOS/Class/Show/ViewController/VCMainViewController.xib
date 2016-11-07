@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCMainViewController">
             <connections>
-                <outlet property="contentScrollView" destination="esE-aX-5in" id="01b-oo-eLR"/>
+                <outlet property="contentScrollView" destination="bQy-HX-xzZ" id="7pl-7Q-bx7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,18 +20,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esE-aX-5in">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-HX-xzZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="jNG-DD-4K6"/>
+                        <outlet property="delegate" destination="-1" id="ldr-Yv-IZ5"/>
                     </connections>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="esE-aX-5in" secondAttribute="bottom" id="2Xe-J3-BRa"/>
-                <constraint firstAttribute="trailing" secondItem="esE-aX-5in" secondAttribute="trailing" id="2hD-WF-mNM"/>
-                <constraint firstItem="esE-aX-5in" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R9k-KB-R8c"/>
-                <constraint firstItem="esE-aX-5in" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rUf-WZ-MNb"/>
+                <constraint firstAttribute="bottom" secondItem="bQy-HX-xzZ" secondAttribute="bottom" id="8Bf-F2-cAb"/>
+                <constraint firstItem="bQy-HX-xzZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ER9-dm-B3V"/>
+                <constraint firstAttribute="trailing" secondItem="bQy-HX-xzZ" secondAttribute="trailing" id="GBu-bM-dVM"/>
+                <constraint firstItem="bQy-HX-xzZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M2N-ki-Ter"/>
             </constraints>
         </view>
     </objects>
