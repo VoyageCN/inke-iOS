@@ -10,6 +10,7 @@
 #import "HTTPTool.h"
 #import "VCLive.h"
 #import "NSObject+YYModel.h"
+#import "VCLocationManager.h"
 
 @implementation VCLiveHandler
 
@@ -19,12 +20,19 @@
 
 + (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed {
     
-   // SXTLocationManager * manager = [SXTLocationManager sharedManager];
+    VCLocationManager * manager = [VCLocationManager sharedManager];
     
+#if TARGET_IPHONE_SIMULATOR
     NSDictionary * params = @{@"uid":@"85149891",
                               @"latitude":@"40.090562",
                               @"longitude":@"116.413353"
                               };
+#elif TARGET_OS_IPHONE
+    NSDictionary * params = @{@"uid":@"85149891",
+                              @"latitude":manager.lat,
+                              @"longitude":manager.lon
+                              };
+#endif
     
     [HTTPTool getWithPath:API_NearLive params:params success:^(id json) {
         

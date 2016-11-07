@@ -32,6 +32,7 @@
 		348B74371DD09ECC0093C5AD /* VCLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74361DD09ECC0093C5AD /* VCLiveHandler.m */; };
 		348B743A1DD09EF60093C5AD /* VCBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74391DD09EF60093C5AD /* VCBaseHandler.m */; };
 		348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B743C1DD0A1720093C5AD /* HTTPTool.m */; };
+		348B74411DD0BA060093C5AD /* VCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74401DD0BA060093C5AD /* VCLocationManager.m */; };
 		34A62F1C1DC782C100B97EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A62F1B1DC782C100B97EEC /* Assets.xcassets */; };
 		34B081721DC7700A00D935E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B081711DC7700A00D935E8 /* main.m */; };
 		34B0817B1DC7700A00D935E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B081791DC7700A00D935E8 /* Main.storyboard */; };
@@ -87,6 +88,8 @@
 		348B743B1DD0A1720093C5AD /* HTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTool.h; sourceTree = "<group>"; };
 		348B743C1DD0A1720093C5AD /* HTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTool.m; sourceTree = "<group>"; };
 		348B743E1DD0AB2D0093C5AD /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
+		348B743F1DD0BA060093C5AD /* VCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLocationManager.h; sourceTree = "<group>"; };
+		348B74401DD0BA060093C5AD /* VCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLocationManager.m; sourceTree = "<group>"; };
 		34A62F1B1DC782C100B97EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34B0816D1DC7700A00D935E8 /* inke-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "inke-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B081711DC7700A00D935E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 		34B0818B1DC7734600D935E8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				348B743F1DD0BA060093C5AD /* VCLocationManager.h */,
+				348B74401DD0BA060093C5AD /* VCLocationManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 				3443ADEA1DC78AA500C0FDFF /* VCTabBarViewController.m in Sources */,
 				348B74221DD092420093C5AD /* VCNearLiveCell.m in Sources */,
 				342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */,
+				348B74411DD0BA060093C5AD /* VCLocationManager.m in Sources */,
 				348B74371DD09ECC0093C5AD /* VCLiveHandler.m in Sources */,
 				342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */,
 				348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */,
