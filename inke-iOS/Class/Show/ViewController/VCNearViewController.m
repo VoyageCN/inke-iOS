@@ -26,7 +26,7 @@ static NSString *identifier = @"VCNearLiveCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self initUI];
     
     [self loadData];
@@ -64,7 +64,7 @@ static NSString *identifier = @"VCNearLiveCell";
     
     NSInteger count = self.collectionView.width / kItemWidth;
     
-    CGFloat etraWidth = self.collectionView.width - kItemWidth * (count + 1) / count;
+    CGFloat etraWidth = (self.collectionView.width - kMargin * (count + 1)) / count;
     
     return CGSizeMake(etraWidth, etraWidth + 20);
 }
