@@ -9,6 +9,7 @@
 #import "VCLiveHandler.h"
 #import "HTTPTool.h"
 #import "VCLive.h"
+#import "VCAdvertise.h"
 #import "NSObject+YYModel.h"
 #import "VCLocationManager.h"
 
@@ -16,12 +17,34 @@
 
 + (void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed {
     
+    [HTTPTool getWithPath:API_HotLive params:nil success:^(id json) {
+        
+        if ([json[@"dm_error"] integerValue]) {
+            
+            failed(json);
+        } else {
+            
+            NSArray *lives = [VCLive mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            success(lives);
+        }
+    } failure:^(NSError *error) {
+        
+        failed(error);
+    }];
+    
 }
 
 + (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed {
     
-    VCLocationManager * manager = [VCLocationManager sharedManager];
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    VCLocationManager *manager = [VCLocationManager sharedManager];
+#pragma clang diagnositc pop
+    static CLLocationCoordinate2D coor;
+    [manager getLocation:^(NSString *lat, NSString *lon) {
+        
+        coor = CLLocationCoordinate2DMake([lat unsignedLongLongValue], [lon unsignedLongLongValue]);
+    }];
 #if TARGET_IPHONE_SIMULATOR
     NSDictionary * params = @{@"uid":@"85149891",
                               @"latitude":@"40.090562",
@@ -29,8 +52,8 @@
                               };
 #elif TARGET_OS_IPHONE
     NSDictionary * params = @{@"uid":@"85149891",
-                              @"latitude":manager.lat,
-                              @"longitude":manager.lon
+                              @"latitude":@(coor.latitude),
+                              @"longitude":@(coor.longitude)
                               };
 #endif
     
@@ -60,6 +83,20 @@
 
 + (void)executeGetAdvertiseTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed {
     
+    [HTTPTool getWithPath:API_Advertise params:nil success:^(id json) {
+        
+        if ([json[@"dm_error"] integerValue]) {
+            
+            failed(json);
+            
+        } else {
+            
+            
+        }
+    } failure:^(NSError *error) {
+        
+        
+    }];
 }
 
 @end

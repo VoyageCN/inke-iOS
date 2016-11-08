@@ -33,6 +33,7 @@
 		348B743A1DD09EF60093C5AD /* VCBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74391DD09EF60093C5AD /* VCBaseHandler.m */; };
 		348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B743C1DD0A1720093C5AD /* HTTPTool.m */; };
 		348B74411DD0BA060093C5AD /* VCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74401DD0BA060093C5AD /* VCLocationManager.m */; };
+		348B74801DD0D6590093C5AD /* VCAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B747F1DD0D6590093C5AD /* VCAdvertise.m */; };
 		34A62F1C1DC782C100B97EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A62F1B1DC782C100B97EEC /* Assets.xcassets */; };
 		34B081721DC7700A00D935E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B081711DC7700A00D935E8 /* main.m */; };
 		34B0817B1DC7700A00D935E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B081791DC7700A00D935E8 /* Main.storyboard */; };
@@ -90,6 +91,8 @@
 		348B743E1DD0AB2D0093C5AD /* APIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfig.h; sourceTree = "<group>"; };
 		348B743F1DD0BA060093C5AD /* VCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLocationManager.h; sourceTree = "<group>"; };
 		348B74401DD0BA060093C5AD /* VCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLocationManager.m; sourceTree = "<group>"; };
+		348B747E1DD0D6590093C5AD /* VCAdvertise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAdvertise.h; sourceTree = "<group>"; };
+		348B747F1DD0D6590093C5AD /* VCAdvertise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAdvertise.m; sourceTree = "<group>"; };
 		34A62F1B1DC782C100B97EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34B0816D1DC7700A00D935E8 /* inke-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "inke-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B081711DC7700A00D935E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -389,6 +392,8 @@
 				348B74251DD0924B0093C5AD /* VCLive.m */,
 				348B74271DD095E80093C5AD /* VCCreator.h */,
 				348B74281DD095E80093C5AD /* VCCreator.m */,
+				348B747E1DD0D6590093C5AD /* VCAdvertise.h */,
+				348B747F1DD0D6590093C5AD /* VCAdvertise.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				TargetAttributes = {
 					34B0816C1DC7700A00D935E8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F7C55VYF9A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -586,6 +592,7 @@
 				348B743D1DD0A1720093C5AD /* HTTPTool.m in Sources */,
 				348B74261DD0924B0093C5AD /* VCLive.m in Sources */,
 				34B081A51DC7734600D935E8 /* AppDelegate.m in Sources */,
+				348B74801DD0D6590093C5AD /* VCAdvertise.m in Sources */,
 				3443ADED1DC78ACA00C0FDFF /* VCTabBar.m in Sources */,
 				348B743A1DD09EF60093C5AD /* VCBaseHandler.m in Sources */,
 				348B742C1DD0988E0093C5AD /* UIImageView+SDWebImage.m in Sources */,
@@ -661,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -703,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -718,7 +725,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				BUNDLE_LOADER = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7C55VYF9A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/inke-iOS/Class/Other/inke-iOS.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "inke-iOS/Info.plist";
@@ -738,7 +745,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				BUNDLE_LOADER = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7C55VYF9A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/inke-iOS/Class/Other/inke-iOS.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "inke-iOS/Info.plist";

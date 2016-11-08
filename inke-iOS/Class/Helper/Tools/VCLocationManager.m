@@ -30,18 +30,17 @@
     return _manager;
 }
 
-- (instancetype)init {
-    
+- (instancetype)init
+{
     self = [super init];
     if (self) {
-        
         _locManager = [[CLLocationManager alloc] init];
         [_locManager setDesiredAccuracy:(kCLLocationAccuracyBest)];
         _locManager.distanceFilter = 100;
         _locManager.delegate = self;
         
         if (![CLLocationManager locationServicesEnabled]) {
-            NSLog(@"开启定位服务");
+            NSLog(@"Open location service.");
         } else {
             
             CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
@@ -70,11 +69,24 @@
     [self.locManager stopUpdatingLocation];
 }
 
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error {
+
+    NSLog(@"%@",error);
+}
+
 #pragma mark - public
 - (void)getLocation:(VCLocationBlock)block {
     
     self.block = block;
     [self.locManager startUpdatingLocation];
+}
+
+#pragma mark - dealloc
+
+- (void)dealloc {
+    
+    NSLog(@"%@释放了",self);
 }
 
 @end
