@@ -26,7 +26,7 @@
 @property (nonatomic, strong) NSString * share_addr;
 @property (nonatomic, assign) NSInteger slot;
 @property (nonatomic, assign) NSInteger status;
-@property (nonatomic, strong) NSString * stream_addr;
+@property (nonatomic, strong) NSString * streamAddr;
 @property (nonatomic, assign) NSInteger version;
 
 @property (nonatomic, copy) NSString * distance;

@@ -9,6 +9,7 @@
 #import "VCHotViewController.h"
 #import "VCHotLiveCell.h"
 #import "VCLiveHandler.h"
+#import "VCPlayerViewController.h"
 
 static NSString *identifier = @"VCHotLiveCell";
 
@@ -74,6 +75,14 @@ static NSString *identifier = @"VCHotLiveCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    VCLive *live = self.dataList[indexPath.row];
+    
+    VCPlayerViewController *playVC = [[VCPlayerViewController alloc] init];
+    playVC.live = live;
+    
+    [self.navigationController pushViewController:playVC animated:YES];
 }
 
 - (void)initUI {

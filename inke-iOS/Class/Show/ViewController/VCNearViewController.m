@@ -9,6 +9,7 @@
 #import "VCNearViewController.h"
 #import "VCNearLiveCell.h"
 #import "VCLiveHandler.h"
+#import "VCPlayerViewController.h"
 
 static NSString *identifier = @"VCNearLiveCell";
 
@@ -74,6 +75,11 @@ static NSString *identifier = @"VCNearLiveCell";
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
     VCLive *live = self.dataList[indexPath.row];
+    
+    VCPlayerViewController *playVC = [[VCPlayerViewController alloc] init];
+    playVC.live = live;
+    [self.navigationController pushViewController:playVC animated:YES];
+    
 }
 
 - (void)initUI {
