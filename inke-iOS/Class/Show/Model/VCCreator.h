@@ -23,10 +23,10 @@
 @property (nonatomic, strong) NSString * nick;
 @property (nonatomic, strong) NSString * portrait;
 @property (nonatomic, strong) NSString * profession;
-@property (nonatomic, assign) NSInteger rankVeri;
-@property (nonatomic, strong) NSString * thirdPlatform;
-@property (nonatomic, strong) NSString * veriInfo;
+@property (nonatomic, assign) NSInteger rank_veri;
+@property (nonatomic, strong) NSString * third_platform;
+@property (nonatomic, strong) NSString * veri_info;
 @property (nonatomic, assign) NSInteger verified;
-@property (nonatomic, strong) NSString * verifiedReason;
+@property (nonatomic, strong) NSString * verified_reason;
 
 @end

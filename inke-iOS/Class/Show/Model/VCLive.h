@@ -18,15 +18,15 @@
 @property (nonatomic, assign) NSInteger link;
 @property (nonatomic, assign) NSInteger multi;
 @property (nonatomic, strong) NSString * name;
-@property (nonatomic, assign) NSInteger onlineUsers;
+@property (nonatomic, assign) NSInteger online_users;
 @property (nonatomic, assign) NSInteger optimal;
-@property (nonatomic, assign) NSInteger pubStat;
+@property (nonatomic, assign) NSInteger pub_stat;
 @property (nonatomic, assign) NSInteger roomId;
 @property (nonatomic, assign) NSInteger rotate;
-@property (nonatomic, strong) NSString * shareAddr;
+@property (nonatomic, strong) NSString * share_addr;
 @property (nonatomic, assign) NSInteger slot;
 @property (nonatomic, assign) NSInteger status;
-@property (nonatomic, strong) NSString * streamAddr;
+@property (nonatomic, strong) NSString * stream_addr;
 @property (nonatomic, assign) NSInteger version;
 
 @property (nonatomic, copy) NSString * distance;
