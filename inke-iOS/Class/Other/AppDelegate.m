@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JPFPSStatus.h"
 #import "VCTabBarViewController.h"
 
 @interface AppDelegate ()
@@ -19,7 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     VCTabBarViewController *mainVC = [[VCTabBarViewController alloc] init];
-    
+#if defined(DEBUG) || defined(_DEBUG)
+    [[JPFPSStatus sharedInstance] open];
+#endif
     self.window.rootViewController = mainVC;
     
     [self.window makeKeyAndVisible];

@@ -112,7 +112,7 @@
     
     IJKFFOptions * options = [IJKFFOptions optionsByDefault];
     
-    IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:self.live.streamAddr withOptions:options];
+    IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc] initWithContentURLString:self.live.stream_addr withOptions:options];
     self.player = player;
     self.player.view.frame = self.view.bounds;
     self.player.shouldAutoplay = YES;

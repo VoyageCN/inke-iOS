@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,11 +19,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="Dtx-1b-jKZ"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVG-NU-pDu">
-                    <state key="normal" image="launch_close"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="Dtx-1b-jKZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-7b-40j">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jY-mz-gyG">
+                    <rect key="frame" x="10" y="20" width="72" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="北京市" image="launch_map_on">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svs-5f-Lhn">
+                    <rect key="frame" x="62.5" y="311.5" width="250" height="44"/>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" red="0.22629150340000001" green="0.96862745100000003" blue="0.90881645639999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
-                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="ZPN-LI-NJJ"/>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="SVc-9O-F40"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p60-mn-0P2">
+                    <rect key="frame" x="62" y="251.5" width="250" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="UUN-Si-xWR"/>
+                        <constraint firstAttribute="width" constant="250" id="nXW-i5-uEb"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbl-Qb-i5m">
+                    <rect key="frame" x="347" y="30" width="18" height="22"/>
+                    <state key="normal" image="close_preview"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="V9F-d5-DQT"/>
                     </connections>
                 </button>
             </subviews>
@@ -28,16 +64,24 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Dtx-1b-jKZ" secondAttribute="bottom" id="3R4-Gs-vTZ"/>
                 <constraint firstItem="Dtx-1b-jKZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7HC-de-DRY"/>
-                <constraint firstAttribute="trailing" secondItem="MVG-NU-pDu" secondAttribute="trailing" id="GIB-Ji-xXd"/>
-                <constraint firstItem="MVG-NU-pDu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cdC-Hu-dJm"/>
+                <constraint firstItem="p60-mn-0P2" firstAttribute="centerX" secondItem="svs-5f-Lhn" secondAttribute="centerX" id="Bsh-Bg-wpD"/>
+                <constraint firstItem="8jY-mz-gyG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Cj4-jg-FtL"/>
+                <constraint firstItem="svs-5f-Lhn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JDI-fg-y3J"/>
+                <constraint firstItem="svs-5f-Lhn" firstAttribute="top" secondItem="p60-mn-0P2" secondAttribute="bottom" constant="30" id="dDP-vV-3dR"/>
+                <constraint firstItem="8jY-mz-gyG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="jdj-qE-U8w"/>
+                <constraint firstItem="Bbl-Qb-i5m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="t93-CK-6wf"/>
                 <constraint firstItem="Dtx-1b-jKZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tlq-0K-hXp"/>
+                <constraint firstItem="svs-5f-Lhn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wjm-Gn-cPa"/>
+                <constraint firstAttribute="trailing" secondItem="Bbl-Qb-i5m" secondAttribute="trailing" constant="10" id="x00-Eh-T4d"/>
                 <constraint firstAttribute="trailing" secondItem="Dtx-1b-jKZ" secondAttribute="trailing" id="ys3-Vv-RTc"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="115.5"/>
         </view>
     </objects>
     <resources>
-        <image name="bg_zbfx" width="16" height="16"/>
-        <image name="launch_close" width="64" height="64"/>
+        <image name="bg_zbfx" width="250" height="444"/>
+        <image name="close_preview" width="18" height="18"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
     </resources>
 </document>

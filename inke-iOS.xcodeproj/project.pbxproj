@@ -38,6 +38,7 @@
 		347BC8101DD509AA00C19591 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BC80F1DD509AA00C19591 /* AudioToolbox.framework */; };
 		347BC8121DD509B100C19591 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BC8111DD509B100C19591 /* libz.tbd */; };
 		347BC8141DD509B700C19591 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BC8131DD509B700C19591 /* libbz2.tbd */; };
+		347BC8171DD59A4700C19591 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BC8161DD59A4700C19591 /* LFLivePreview.m */; };
 		348B74221DD092420093C5AD /* VCNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74201DD092420093C5AD /* VCNearLiveCell.m */; };
 		348B74231DD092420093C5AD /* VCNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 348B74211DD092420093C5AD /* VCNearLiveCell.xib */; };
 		348B74261DD0924B0093C5AD /* VCLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 348B74251DD0924B0093C5AD /* VCLive.m */; };
@@ -106,6 +107,8 @@
 		347BC80F1DD509AA00C19591 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		347BC8111DD509B100C19591 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		347BC8131DD509B700C19591 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		347BC8151DD59A4700C19591 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		347BC8161DD59A4700C19591 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
 		348B741F1DD092420093C5AD /* VCNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNearLiveCell.h; sourceTree = "<group>"; };
 		348B74201DD092420093C5AD /* VCNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNearLiveCell.m; sourceTree = "<group>"; };
 		348B74211DD092420093C5AD /* VCNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCNearLiveCell.xib; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 		34B081951DC7734600D935E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				347BC8151DD59A4700C19591 /* LFLivePreview.h */,
+				347BC8161DD59A4700C19591 /* LFLivePreview.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -667,6 +672,7 @@
 				342BDC061DC8A70B00CBC313 /* VCHotViewController.m in Sources */,
 				348B74411DD0BA060093C5AD /* VCLocationManager.m in Sources */,
 				348B74C31DD381D30093C5AD /* VCHotLiveCell.m in Sources */,
+				347BC8171DD59A4700C19591 /* LFLivePreview.m in Sources */,
 				34EFD7511DD4C93E0097C595 /* VCPlayerViewController.m in Sources */,
 				348B74371DD09ECC0093C5AD /* VCLiveHandler.m in Sources */,
 				342BDC0F1DC8B20A00CBC313 /* VCMainTopView.m in Sources */,

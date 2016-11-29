@@ -7,6 +7,7 @@
 //
 
 #import "VCLaunchViewController.h"
+#import "LFLivePreview.h"
 
 @interface VCLaunchViewController ()
 
@@ -22,6 +23,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)startLive:(id)sender {
+    
+    UIView *backView = [[UIView alloc] initWithFrame:self.view.bounds];
+    backView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:backView];
+    
+    LFLivePreview *preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+    preView.vc = self;
+    [self.view addSubview:preView];
+    
+    [preView startLive];
 }
 
 - (IBAction)closeLaunch:(id)sender {

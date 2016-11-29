@@ -98,6 +98,7 @@ static NSString *identifier = @"VCHotLiveCell";
     
     [VCLiveHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
         
+        
         self.dataList = obj;
         [self.tableView reloadData];
         

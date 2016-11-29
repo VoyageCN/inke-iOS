@@ -11,4 +11,6 @@ target 'inke-iOS' do
   pod 'SDWebImage', '~> 3.8.2'
   pod 'Masonry', '~> 1.0.2'
   pod 'YYKit'
+  pod 'LFLiveKit'
+  pod 'JPFPSStatus'
 end
